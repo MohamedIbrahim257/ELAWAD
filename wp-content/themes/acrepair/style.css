@@ -85,3 +85,9 @@ body{
 h1 , h2 , h3 , h4 , h5  , a{
 	font-family: 'El Messiri', sans-serif;	
 }
+
+.logo-footer{
+	transform: scale(2);
+	position: relative;
+	right: 25px;
+}
