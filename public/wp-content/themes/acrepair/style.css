@@ -1,0 +1,93 @@
+/*
+ * Theme Name: Acrepair
+ * Author: Yogs Themes
+ * Author URI: http://themeforest.net/user/yogsthemes
+ * Theme URI: http://wp1.efforttech.com/newwp/acrepair
+ * Description: Acrepair WordPress theme is a new clean and polished solution perfect for firms offering heater and air conditioner repair, replacement, and installation. It can also serve as an air conditioner and air supplies store, but besides that will also make a good website for home maintenance and cooling/heating ventilation services website. A professionally-made and good-looking website is a must for a modern business. So to save yourself a great amount of time and finances, this website is your best shot at creating a niche website!
+ * Version: 1.0
+ * License: This theme or plugin is comprised of two parts. (1) the PHP code and integrated HTML are licensed under the General Public License (GPL). You will find a copy of the GPL in the same directory as this text file. (2) All other parts, but not limited to the CSS code, images, and design are licensed according to the license purchased from Envato.  Read more about licensing here: http://themeforest.net/licenses
+ * License URI: license.txt
+ * Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ * Text Domain: acrepair
+ * Tested up to: 5.0
+ * Requires PHP: 7.2
+*/
+.wp-caption {
+	margin-bottom: 2px;
+}
+
+.wp-caption-text {
+	margin-bottom: 5px;
+}
+
+.screen-reader-text {
+	margin-bottom: 12px;
+}
+
+.gallery-caption {
+	margin-bottom: 2px;
+}
+
+.bypostauthor {
+	margin-bottom: 2px;
+}
+
+.alignleft {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	max-width: 100%;
+	width: unset !important;
+}
+
+.alignright {
+	float: right !important;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	max-width: 100%;
+	width: unset !important;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+.col-md-4 .funfact-meta > i {
+	right: 27px;
+}
+
+.mycustom-pricing {
+	background-color: #090909 !important;
+}
+
+.on-hover {
+	display: none;
+	animation: fadeOut 0.5s;
+}
+
+.hver:hover .on-hover {
+	display: block;
+	animation: fadeIn 0.5s;
+}
+
+.title-logo{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.5rem;
+}
+
+body{
+	font-family: 'El Messiri', sans-serif;	
+}
+
+h1 , h2 , h3 , h4 , h5  , a{
+	font-family: 'El Messiri', sans-serif;	
+}
+
+.logo-footer{
+	transform: scale(2);
+	position: relative;
+	right: 25px;
+}
