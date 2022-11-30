@@ -503,7 +503,8 @@ img{
 	z-index:100;
 	opacity:1 !important;
 	cursor:pointer;
-	background:#0a0a0a;
+	background:#0074c8;
+	border-radius: 50%;
 	display:none;
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
