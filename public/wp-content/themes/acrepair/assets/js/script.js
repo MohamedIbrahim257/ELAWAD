@@ -143,13 +143,13 @@
 			loop:true,
 			margin:30,
 			rtl:true,
-			// nav:true,
+			nav:true,
 			// pagination: false,
 			// paginationNumbers: false,
 			autoHeight: true,
 			smartSpeed: 500,
 			autoplay: 5000,
-			// navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
