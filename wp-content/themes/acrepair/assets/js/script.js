@@ -164,7 +164,71 @@
 					items:3
 				},
 				1200:{
+					items:3
+				}
+			}
+		});    		
+	}
+
+	if ($('.our-service').length) {
+		$('.our-service').owlCarousel({
+			loop:true,
+			margin:30,
+			rtl:true,
+			// nav:true,
+			// pagination: false,
+			// paginationNumbers: false,
+			autoHeight: true,
+			smartSpeed: 500,
+			autoplay: 5000,
+			// navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:2
+				},
+				800:{
+					items:2
+				},
+				1024:{
+					items:3
+				},
+				1200:{
 					items:4
+				}
+			}
+		});    		
+	}
+
+	if ($('.our-partners').length) {
+		$('.our-partners').owlCarousel({
+			loop:true,
+			margin:30,
+			rtl:true,
+			// nav:true,
+			// pagination: false,
+			// paginationNumbers: false,
+			autoHeight: true,
+			smartSpeed: 500,
+			autoplay: 5000,
+			// navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:2
+				},
+				800:{
+					items:2
+				},
+				1024:{
+					items:3
+				},
+				1200:{
+					items:5
 				}
 			}
 		});    		
