@@ -3,14 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="./wp-content/uploads/2022/05/awadlogo.png" type="image/x-icon">
-	<link rel="icon" href="./wp-content/uploads/2022/05/awadlogo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./wp-content/uploads/2022/06/loader.png" type="image/x-icon">
+	<link rel="icon" href="../wp-content/uploads/2022/06/loader.png" type="image/x-icon">
 	<!-- responsive meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title> العواد للتكييف - أتصل بنا</title>
 	<meta name='robots' content='max-image-preview:large' />
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,6 +39,43 @@
 			vertical-align: -0.1em !important;
 			background: none !important;
 			padding: 0 !important;
+		}
+
+		.custom-file {
+			color: black;
+		}
+
+		.custom-file::-webkit-file-upload-button {
+			visibility: hidden;
+		}
+
+		.custom-file::before {
+			content: 'إرفاق الملف';
+			color: white;
+			display: inline-block;
+			background: -webkit-linear-gradient(top, #0074c8, #0074c8);
+			border: 1px solid white;
+			border-radius: 3px;
+			padding: 5px 15px;
+			outline: none;
+			white-space: nowrap;
+			-webkit-user-select: none;
+			cursor: pointer;
+			/* text-shadow: 1px 1px #fff; */
+			font-weight: 700;
+			font-size: 10pt;
+		}
+
+		.custom-file:hover::before {
+			border-color: white;
+		}
+
+		.custom-file:active {
+			outline: 0;
+		}
+
+		.custom-file:active::before {
+			background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 		}
 	</style>
 	<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.1'
@@ -744,32 +782,31 @@
 <body
 	class="page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-34 theme-acrepair woocommerce-no-js menu-layer elementor-default elementor-kit-9 elementor-page elementor-page-34 ">
 
-
+<div class="preloader"></div>
 
 	<div class="page-wrapper rtl">
-		<!-- <div class="preloader"></div> -->
+		
 
 		<!-- Preloader -->
-	
+
 
 		<!-- Main Header-->
 		<header class="main-header header-style-one">
-			
+
 			<!--Header-Upper-->
 			<div class="header-upper">
-	
+
 				<div class="auto-container">
 					<div class="inner-container clearfix ">
 						<div class="pull-left  d-flex ">
-							<div  ><a href="/" title="العواد للتكييف"><img 
-							width="70px"
+							<div><a href="/" title="العواد للتكييف"><img width="70px"
 										src="../wp-content/uploads/2022/05/logo.png" alt="logo" /></a></div>
 							<div class="title-logo">
 								<h3 class="">العواد للتكييف</h3>
 							</div>
 
 						</div>
-				
+
 
 						<div class="pull-right upper-right">
 							<div class="info-outer clearfix">
@@ -782,7 +819,7 @@
 								</div>
 								<!--Info Box-->
 								<div class="upper-column info-box">
-									<div class="icon-box"><span class="flaticon-map"></span></div>
+									<div class="icon-box"><span class="fa-spin fa-solid fa-snowflake"></span></div>
 									<ul>
 										<li>شركة العواد للتكييف.. معك في كل خطوة
 										</li>
@@ -860,6 +897,13 @@
 										<a title="من نحن" href="/about-us/" class="hvr-underline-from-left1" data-scroll
 											data-options="easing: easeOutQuart">من نحن</a>
 									</li>
+
+									<li id="menu-item-800"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800">
+										<a title="خدماتنا" href="../services/index.html"
+											class="hvr-underline-from-left1" data-scroll
+											data-options="easing: easeOutQuart">خدماتنا</a>
+									</li>
 									<!-- <li id="menu-item-801"
 										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-801 dropdown">
 										<a title="خدمات" href="#" data-toggle="dropdown1"
@@ -922,8 +966,9 @@
 									</li>
 									<li id="menu-item-815"
 										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-815">
-										<a href="../blog-classic/index.html" title="مقالات" href="#" data-toggle="dropdown1"
-											class="hvr-underline-from-left1" aria-expanded="false" data-scroll
+										<a href="../blog-classic/index.html" title="مقالات" href="#"
+											data-toggle="dropdown1" class="hvr-underline-from-left1"
+											aria-expanded="false" data-scroll
 											data-options="easing: easeOutQuart">مقالات</a>
 										<!-- <ul role="menu" class="submenu">
 											<li id="menu-item-812"
@@ -999,10 +1044,9 @@
 		</header>
 		<!--End Main Header -->
 		<!-- Page Title -->
-		<section class="page-title"
-			style="background-image: url('../wp-content/uploads/2022/05/01-370x395.jpg')">
+		<section class="page-title" style="background-image: url('../wp-content/uploads/2022/06/slider-3\ \(1\).jpg')">
 			<div class="auto-container">
-				<h1>  أتصل بنا</h1>
+				<h1> أتصل بنا</h1>
 				<div class="text">There are many variations amet, vix an natum labitur eleifend, mel <br> amet a laoreet
 					menandri. Ei justo complectitur duo. Ei mundi <br> solet ut soletu mel possit quo.</div>
 			</div>
@@ -1048,7 +1092,8 @@
 														<div class="inner-column">
 															<div class="title-box">
 																<h3>يسعدنا تواصلكم معنا في أي وقت</h3>
-																<div class="text">سنقوم بالرد على رسائلكم واستفساراتكم في أقرب فرصة ممكنة.</div>
+																<div class="text">سنقوم بالرد على رسائلكم واستفساراتكم
+																	في أقرب فرصة ممكنة.</div>
 															</div>
 															<!-- Contact Form -->
 															<div class="contact-form">
@@ -1059,8 +1104,7 @@
 																			aria-atomic="true"></p>
 																		<ul></ul>
 																	</div>
-																	<form
-																	dir="rtl"
+																	<form dir="rtl"
 																		action="/newwp/acrepair/contact-us-01/#wpcf7-f216-p34-o1"
 																		method="post" class="wpcf7-form init"
 																		novalidate="novalidate" data-status="init">
@@ -1114,11 +1158,22 @@
 																						aria-invalid="false"
 																						placeholder="البريد الالكتروني" /></span>
 																			</div>
+																			<div
+																			class="col-lg-6 col-md-6 col-sm-12 form-group  d-flex justify-content-center">
+
+																			<label
+																				class="wpcf7-form-control-wrap email-113 "><input
+																					class="custom-file" type="file"
+																					name="email-113" value=""
+																					size="40" aria-required="true"
+																					aria-invalid="false"
+																					placeholder="آرفاق الملف" /></label>
+																		</div>
 																			<p>
 																				<!--Form Group-->
 																			</p>
 																			<div
-																				class="form-group col-lg-6 col-md-6 col-sm-12">
+																				class="form-group col-lg-12 col-md-12 col-sm-12">
 																				<span
 																					class="wpcf7-form-control-wrap menu-329"><select
 																						name="menu-329"
@@ -1152,7 +1207,8 @@
 																				<button class="theme-btn btn-style-one"
 																					type="submit"
 																					name="submit-form"><span
-																						class="txt">إرسل الرسالة</span></button>
+																						class="txt">إرسل
+																						الرسالة</span></button>
 																			</div>
 																		</div>
 																		<div class="wpcf7-response-output"
@@ -1168,7 +1224,7 @@
 													<div class="map-column col-lg-5 col-md-12 col-sm-12">
 														<div class="inner-column">
 															<div class="title-box">
-																<h3>عنوان مكتبنا</h3>
+																<h3>معلومات التواصل</h3>
 															</div>
 															<ul class="addres-list">
 
@@ -1177,19 +1233,23 @@
 																	Turnpike Drive, Birmingham, <br> Alabama, 35222.
 																	United States</li> -->
 																<li>
-																	<a href="tel:0537224435">	<span
-																		class="icon icon flaticon-phone"></span>0537224435</a>
-																
+																	<a href="tel:0537224435"> <span
+																			class="icon icon flaticon-phone"></span>0537224435</a>
+
 																</li>
 																<li>
-																	<a href="mailto:aircon.alawad@gmail.com">	<span
-																		class="icon icon flaticon-email"></span>aircon.alawad@gmail.com</a>
-																
+																	<a href="mailto:aircon.alawad@gmail.com"> <span
+																			class="icon icon flaticon-email"></span>aircon.alawad@gmail.com</a>
+
 																</li>
 															</ul>
 															<!-- Map Boxed -->
 															<div class="map-boxed">
-																<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463876.93970435776!2d46.542336575574055!3d24.72555534712373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sro!4v1667949603756!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+																<iframe
+																	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463876.93970435776!2d46.542336575574055!3d24.72555534712373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sro!4v1667949603756!5m2!1sen!2sro"
+																	width="600" height="450" style="border:0;"
+																	allowfullscreen="" loading="lazy"
+																	referrerpolicy="no-referrer-when-downgrade"></iframe>
 															</div>
 														</div>
 													</div>
@@ -1264,8 +1324,9 @@
 												</li> -->
 												<li>
 													<strong>أتصل بنا </strong>
-												<a href="tel:0537224435">هاتف: 0537224435</a>	<br>
-												<a href="mailto:aircon.alawad@gmail.com">aircon.alawad@gmail.com : Email</a>	
+													<a href="tel:0537224435">هاتف: 0537224435</a> <br>
+													<a href="mailto:aircon.alawad@gmail.com">aircon.alawad@gmail.com :
+														Email</a>
 												</li>
 											</ul>
 										</div>
@@ -1308,7 +1369,7 @@
 								</div>
 								<div class="col-lg-3 col-md-6 col-sm-12 footer-column">
 									<div id="nav_menu-7" class="footer-widget widget_nav_menu">
-										<h5>خدماتنا</h5>
+										<h5>خطوات العمل</h5>
 										<div class="menu-rtl-services-menu-container">
 											<ul id="menu-rtl-services-menu" class="menu">
 												<li id="menu-item-826"
@@ -1377,14 +1438,14 @@
 		</a>
 	</div>
 	<div>
-		<a class="whatsappchat" ref="awad" href='tel:566831832' >
+		<a class="whatsappchat" ref="awad" href='tel:566831832'>
 			<img class="whatsappimage" src="../wp-content/uploads/2022/05/call1.png" alt="awad WhatsApp" width="50"
 				height="50" />
 		</a>
 	</div>
 
 
-
+	
 
 	<script>
 		window.RS_MODULES = window.RS_MODULES || {};
@@ -1402,100 +1463,129 @@
 		})();
 	</script>
 	<link rel='stylesheet' id='rs-plugin-settings-css'
-		href='/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.24' type='text/css' media='all' />
+		href='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.24'
+		type='text/css' media='all' />
 	<style id='rs-plugin-settings-inline-css' type='text/css'>
 		#rs-demo-id {}
 	</style>
-	<script type='text/javascript' src='/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9'
 		id='regenerator-runtime-js'></script>
-	<script type='text/javascript' src='/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0'
 		id='wp-polyfill-js'></script>
 	<script type='text/javascript' id='contact-form-7-js-extra'>
 		/* <![CDATA[ */
-		var wpcf7 = { "api": { "root": "http:\/\/wp1.efforttech.com\/newwp\/acrepair\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+		var wpcf7 = { "api": { "root": "https:\/\/wp1.efforttech.com\/newwp\/acrepair\/wp-json\/", "namespace": "contact-form-7\/v1" } };
 /* ]]> */
 	</script>
-	<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6.1'
-		id='contact-form-7-js'></script>
-	<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18' defer
-		async id='tp-tools-js'></script>
-	<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.24' defer
-		async id='revmin-js'></script>
 	<script type='text/javascript'
-		src='/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.6.1'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6.1'
+		id='contact-form-7-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18'
+		defer async id='tp-tools-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.24'
+		defer async id='revmin-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.6.1'
 		id='jquery-blockui-js'></script>
 	<script type='text/javascript' id='wc-add-to-cart-js-extra'>
 		/* <![CDATA[ */
-		var wc_add_to_cart_params = { "ajax_url": "\/newwp\/acrepair\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/newwp\/acrepair\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "http:\/\/wp1.efforttech.com\/newwp\/acrepair\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+		var wc_add_to_cart_params = { "ajax_url": "\/newwp\/acrepair\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/newwp\/acrepair\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/wp1.efforttech.com\/newwp\/acrepair\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
 /* ]]> */
 	</script>
-	<script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.6.1'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.6.1'
 		id='wc-add-to-cart-js'></script>
 	<script type='text/javascript'
-		src='/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.6.1'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.6.1'
 		id='js-cookie-js'></script>
 	<script type='text/javascript' id='woocommerce-js-extra'>
 		/* <![CDATA[ */
 		var woocommerce_params = { "ajax_url": "\/newwp\/acrepair\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/newwp\/acrepair\/?wc-ajax=%%endpoint%%" };
 /* ]]> */
 	</script>
-	<script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.6.1'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.6.1'
 		id='woocommerce-js'></script>
 	<script type='text/javascript' id='wc-cart-fragments-js-extra'>
 		/* <![CDATA[ */
-		var wc_cart_fragments_params = { "ajax_url": "\/newwp\/acrepair\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/newwp\/acrepair\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_d52377342f4cd3f9ceb3a8d144bbd13c", "fragment_name": "wc_fragments_d52377342f4cd3f9ceb3a8d144bbd13c", "request_timeout": "5000" };
+		var wc_cart_fragments_params = { "ajax_url": "\/newwp\/acrepair\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/newwp\/acrepair\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_ef57af25341a177a4bbddc41d1298a24", "fragment_name": "wc_fragments_ef57af25341a177a4bbddc41d1298a24", "request_timeout": "5000" };
 /* ]]> */
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-		integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type='text/javascript'
-		src='/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.6.1'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.6.1'
 		id='wc-cart-fragments-js'></script>
-	<script type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2'
 		id='jquery-ui-core-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/popper.min.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/popper.min.js?ver=2.1.2'
 		id='popper-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/bootstrap.min.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/bootstrap.min.js?ver=2.1.2'
 		id='bootstrap-js'></script>
 	<script type='text/javascript'
-		src='/wp-content/themes/acrepair/assets/js/jquery.mCustomScrollbar.concat.min.js?ver=2.1.2'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/jquery.mCustomScrollbar.concat.min.js?ver=2.1.2'
 		id='jquery-mcustomscrollbar-concat-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/jquery.fancybox.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/jquery.fancybox.js?ver=2.1.2'
 		id='jquery-fancybox-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/appear.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/appear.js?ver=2.1.2'
 		id='appear-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/owl.js?ver=2.1.2' id='owl-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/wow.js?ver=2.1.2' id='wow-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/jquery-ui.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/owl.js?ver=2.1.2'
+		id='owl-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/wow.js?ver=2.1.2'
+		id='wow-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/jquery-ui.js?ver=2.1.2'
 		id='jquery-ui-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/nav-tool.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/nav-tool.js?ver=2.1.2'
 		id='nav-tool-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/isotope.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/isotope.js?ver=2.1.2'
 		id='isotope-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/jquery.magnific-popup.min.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/jquery.magnific-popup.min.js?ver=2.1.2'
 		id='jquery-magnific-popup-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/pagenav.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/pagenav.js?ver=2.1.2'
 		id='acrepair-pagenav-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/main.js?ver=2.1.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/main.js?ver=2.1.2'
 		id='acrepair-main-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/script.js?ver=6.1'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/script.js?ver=6.1'
 		id='acrepair-main-script-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/jquery.cookie.js?ver=6.1'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/jquery.cookie.js?ver=6.1'
 		id='acrepair-cooke-js'></script>
-	<script type='text/javascript' src='/wp-content/themes/acrepair/assets/js/color-panel.js?ver=6.1'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/themes/acrepair/assets/js/color-panel.js?ver=6.1'
 		id='acrepair-color-panel-js'></script>
-	<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=6.1' id='comment-reply-js'></script>
-	<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.6'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-includes/js/comment-reply.min.js?ver=6.1'
+		id='comment-reply-js'></script>
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.6'
 		id='elementor-webpack-runtime-js'></script>
-	<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.6'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.6'
 		id='elementor-frontend-modules-js'></script>
-	<script type='text/javascript' src='/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
 		id='elementor-waypoints-js'></script>
 	<script type='text/javascript' id='elementor-frontend-js-before'>
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.6.6", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "e_import_export": true, "additional_custom_breakpoints": true, "e_hidden_wordpress_widgets": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true }, "urls": { "assets": "http:\/\/wp1.efforttech.com\/newwp\/acrepair\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 701, "title": "RTL%20Home%20Page%20%E2%80%93%20Acrepair", "excerpt": "", "featuredImage": false } };
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.6.6", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "e_import_export": true, "additional_custom_breakpoints": true, "e_hidden_wordpress_widgets": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true }, "urls": { "assets": "https:\/\/wp1.efforttech.com\/newwp\/acrepair\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 17, "title": "About%20Us%20%E2%80%93%20Acrepair", "excerpt": "", "featuredImage": false } };
 	</script>
-	<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.6'
+	<script type='text/javascript'
+		src='https://wp1.efforttech.com/newwp/acrepair/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.6'
 		id='elementor-frontend-js'></script>
 </body>
 

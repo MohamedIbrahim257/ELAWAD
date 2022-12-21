@@ -142,7 +142,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-plus:before {
     content: "\f124";
 }
-.flaticon-maps-and-flags:before {
+.fa-spin fa-solid fa-snowflakes-and-flags:before {
     content: "\f125";
 }
 .flaticon-email-2:before {
@@ -295,7 +295,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-menu-3:before {
     content: "\f157";
 }
-.flaticon-map:before {
+.fa-spin fa-solid fa-snowflake:before {
     content: "\f158";
 }
 .flaticon-web-search-engine:before {
