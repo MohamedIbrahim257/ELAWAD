@@ -39,6 +39,43 @@
 			background: none !important;
 			padding: 0 !important;
 		}
+
+		.custom-file {
+			color: black;
+		}
+
+		.custom-file::-webkit-file-upload-button {
+			visibility: hidden;
+		}
+
+		.custom-file::before {
+			content: 'إرفاق الملف';
+			color: white;
+			display: inline-block;
+			background: -webkit-linear-gradient(top, #0074c8, #0074c8);
+			border: 1px solid white;
+			border-radius: 3px;
+			padding: 5px 15px;
+			outline: none;
+			white-space: nowrap;
+			-webkit-user-select: none;
+			cursor: pointer;
+			/* text-shadow: 1px 1px #fff; */
+			font-weight: 700;
+			font-size: 10pt;
+		}
+
+		.custom-file:hover::before {
+			border-color: white;
+		}
+
+		.custom-file:active {
+			outline: 0;
+		}
+
+		.custom-file:active::before {
+			background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+		}
 	</style>
 	<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.1'
 		type='text/css' media='all' />
@@ -1120,11 +1157,22 @@
 																						aria-invalid="false"
 																						placeholder="البريد الالكتروني" /></span>
 																			</div>
+																			<div
+																			class="col-lg-6 col-md-6 col-sm-12 form-group  d-flex justify-content-center">
+
+																			<label
+																				class="wpcf7-form-control-wrap email-113 "><input
+																					class="custom-file" type="file"
+																					name="email-113" value=""
+																					size="40" aria-required="true"
+																					aria-invalid="false"
+																					placeholder="آرفاق الملف" /></label>
+																		</div>
 																			<p>
 																				<!--Form Group-->
 																			</p>
 																			<div
-																				class="form-group col-lg-6 col-md-6 col-sm-12">
+																				class="form-group col-lg-12 col-md-12 col-sm-12">
 																				<span
 																					class="wpcf7-form-control-wrap menu-329"><select
 																						name="menu-329"
@@ -1320,7 +1368,7 @@
 								</div>
 								<div class="col-lg-3 col-md-6 col-sm-12 footer-column">
 									<div id="nav_menu-7" class="footer-widget widget_nav_menu">
-										<h5>خدماتنا</h5>
+										<h5>خطوات العمل</h5>
 										<div class="menu-rtl-services-menu-container">
 											<ul id="menu-rtl-services-menu" class="menu">
 												<li id="menu-item-826"
